@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECANTO - Arquitetura Contemporânea | Transformando Sonhos em Realidade</title>
+    <meta name="description" content="Escritório de arquitetura contemporânea especializado em criar espaços que emocionam. Projetos residenciais e comerciais com Raul Hirsch e Gabriel Thomé.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h1 class="nav__logo">RECANTO</h1>
+                <p class="nav__subtitle">ARQUITETURA CONTEMPORÂNEA</p>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#servicos" class="nav__link">Serviços</a></li>
+                <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li><a href="#metodologia" class="nav__link">Metodologia</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__content container">
+            <h2 class="hero__title">Arquitetura que Cria Histórias</h2>
+            <p class="hero__subtitle">Acreditamos que a arquitetura tem o poder de preservar histórias e criar novas memórias. Transformamos seus sonhos em realidade através de projetos únicos e contemporâneos.</p>
+            <a href="#projetos" class="btn btn--primary btn--lg hero__cta">Conhecer Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre py-16">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Sobre Nós</h2>
+                <p class="section__subtitle">Conheça os arquitetos por trás dos projetos</p>
+            </div>
+            <div class="sobre__content">
+                <div class="sobre__text">
+                    <h3>Raul Hirsch & Gabriel Thomé</h3>
+                    <p class="sobre__formation">Formados pela UFMG</p>
+                    <p>Nosso escritório nasceu da paixão por criar espaços que emocionam e transformam vidas. Cada projeto é uma oportunidade única de materializar sonhos e criar ambientes que reflitam a personalidade e necessidades dos nossos clientes.</p>
+                    <p>Com formação sólida pela Universidade Federal de Minas Gerais, combinamos conhecimento técnico com sensibilidade artística para entregar projetos excepcionais de arquitetura contemporânea.</p>
+                </div>
+                <div class="sobre__image">
+                    <div class="placeholder-image">
+                        <span>Foto dos Arquitetos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos py-16">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nossos Serviços</h2>
+                <p class="section__subtitle">Soluções completas para seus projetos arquitetônicos</p>
+            </div>
+            
+            <!-- Serviços Individuais -->
+            <div class="servicos__grid">
+                <div class="card servico-card">
+                    <div class="card__body">
+                        <h3>Estudo Preliminar</h3>
+                        <p class="servico__desc">Esboços e Modelagens 3D</p>
+                        <p class="servico__detail">Ponto de partida para transformar ideias em realidade. Exploramos o potencial do terreno e criamos proposta inicial.</p>
+                        <div class="servico__price">R$ 900</div>
+                    </div>
+                </div>
+                
+                <div class="card servico-card">
+                    <div class="card__body">
+                        <h3>Anteprojeto</h3>
+                        <p class="servico__desc">Definição e Imagens Realistas</p>
+                        <p class="servico__detail">Visão começa a ganhar contornos mais claros. Plantas detalhadas e renderizações tridimensionais.</p>
+                        <div class="servico__price">R$ 1.200</div>
+                    </div>
+                </div>
+                
+                <div class="card servico-card">
+                    <div class="card__body">
+                        <h3>Projeto Executivo</h3>
+                        <p class="servico__desc">Desenhos Técnicos e Imagens para Execução</p>
+                        <p class="servico__detail">Plano técnico completo, pronto para ser materializado. Desenhos técnicos detalhados.</p>
+                        <div class="servico__price">R$ 1.250</div>
+                    </div>
+                </div>
+                
+                <div class="card servico-card">
+                    <div class="card__body">
+                        <h3>Detalhamento</h3>
+                        <p class="servico__desc">Especificações para Construção e Aprovação</p>
+                        <p class="servico__detail">Projeto ganha vida nos mínimos detalhes. Foco em áreas sensíveis como cozinhas e banheiros.</p>
+                        <div class="servico__price">R$ 1.320</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pacotes -->
+            <div class="pacotes">
+                <h3 class="pacotes__title">Pacotes Especiais</h3>
+                <div class="pacotes__grid">
+                    <div class="card pacote-card pacote-card--destaque">
+                        <div class="card__body">
+                            <div class="pacote__badge">Mais Popular</div>
+                            <h4>Projeto Completo</h4>
+                            <div class="pacote__prices">
+                                <span class="pacote__price-old">R$ 4.670</span>
+                                <span class="pacote__price-new">R$ 2.690</span>
+                                <span class="pacote__discount">45% OFF</span>
+                            </div>
+                            <ul class="pacote__includes">
+                                <li>✓ Estudo Preliminar</li>
+                                <li>✓ Anteprojeto</li>
+                                <li>✓ Projeto Executivo</li>
+                                <li>✓ Detalhamento</li>
+                            </ul>
+                            <button class="btn btn--primary btn--full-width">Escolher Pacote</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card pacote-card">
+                        <div class="card__body">
+                            <h4>Projeto Rápido</h4>
+                            <div class="pacote__prices">
+                                <span class="pacote__price-old">R$ 2.100</span>
+                                <span class="pacote__price-new">R$ 980</span>
+                                <span class="pacote__discount">53% OFF</span>
+                            </div>
+                            <ul class="pacote__includes">
+                                <li>✓ Estudo Preliminar</li>
+                                <li>✓ Anteprojeto</li>
+                            </ul>
+                            <button class="btn btn--outline btn--full-width">Escolher Pacote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="projetos py-16">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nossos Projetos</h2>
+                <p class="section__subtitle">Conheça algumas de nossas realizações</p>
+            </div>
+            <div class="projetos__grid" id="projetosGrid">
+                <!-- Projetos serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section id="metodologia" class="metodologia py-16">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nossa Metodologia</h2>
+                <p class="section__subtitle">Processo estruturado em 6 etapas</p>
+            </div>
+            <div class="metodologia__timeline" id="metodologiaTimeline">
+                <!-- Timeline será carregada via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato py-16">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Entre em Contato</h2>
+                <p class="section__subtitle">Vamos transformar seu sonho em realidade</p>
+            </div>
+            <div class="contato__content">
+                <div class="contato__info">
+                    <div class="contato__item">
+                        <h4>Instagram</h4>
+                        <a href="https://instagram.com/recanto_arq" target="_blank">@RECANTO_ARQ</a>
+                    </div>
+                    <div class="contato__item">
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/5512996462826" target="_blank">12 99646-2826</a>
+                    </div>
+                    <div class="contato__item">
+                        <h4>Email</h4>
+                        <a href="mailto:recantomineiroarquitetura@gmail.com">RECANTOMINEIROARQUITETURA@GMAIL.COM</a>
+                    </div>
+                    <div class="contato__qr">
+                        <div class="qr-placeholder">QR Code</div>
+                    </div>
+                </div>
+                <form class="contato__form" id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="telefone">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="projeto">Tipo de Projeto</label>
+                        <select class="form-control" id="projeto">
+                            <option value="">Selecione...</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="reforma">Reforma</option>
+                            <option value="paisagismo">Paisagismo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Conte-nos sobre seu projeto..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>RECANTO</h3>
+                    <p>ARQUITETURA CONTEMPORÂNEA</p>
+                    <p>Transformando sonhos em realidade através da arquitetura.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/recanto_arq" target="_blank">Instagram</a>
+                        <a href="https://wa.me/5512996462826" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 RECANTO - Arquitetura Contemporânea. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para projetos -->
+    <div class="modal" id="projetoModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__body" id="modalBody">
+                <!-- Conteúdo do projeto será carregado aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
