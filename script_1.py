@@ -1,4 +1,5 @@
-/* Reset e configurações gerais */
+# 2. Arquivo CSS principal
+css_content = """/* Reset e configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -463,57 +464,57 @@ body {
     .nav-desktop {
         display: none;
     }
-
+    
     .menu-toggle {
         display: flex;
     }
-
+    
     .nav-mobile.active {
         display: flex;
     }
-
+    
     .section {
         padding: 120px 0 40px;
     }
-
+    
     .titulo-outline {
         font-size: 2.5rem;
     }
-
+    
     .home-texto {
         font-size: 1.1rem;
     }
-
+    
     .sobre-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-
+    
     .sobre-fotos {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .metodo-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .projetos-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .contato-content {
         grid-template-columns: 1fr;
     }
-
+    
     .modal-images {
         grid-template-columns: 1fr;
     }
-
+    
     .container {
         padding: 0 15px;
     }
-
+    
     .home-content {
         max-width: 95%;
     }
@@ -523,13 +524,23 @@ body {
     .section-title {
         font-size: 2rem;
     }
-
+    
     .titulo-outline {
         font-size: 2rem;
     }
-
+    
     .foto-socio img {
         width: 250px;
         height: 333px;
     }
-}
+}"""
+
+# Criar diretório CSS se não existir
+import os
+os.makedirs('css', exist_ok=True)
+
+# Salvar o arquivo CSS
+with open('css/style.css', 'w', encoding='utf-8') as f:
+    f.write(css_content)
+
+print("✅ Arquivo CSS criado com sucesso!")

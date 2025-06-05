@@ -3,279 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECANTO - Arquitetura Contemporânea | Transformando Sonhos em Realidade</title>
-    <meta name="description" content="Escritório de arquitetura contemporânea especializado em criar espaços que emocionam. Projetos residenciais e comerciais com Raul Hirsch e Gabriel Thomé.">
+    <title>Recanto - Arquitetura Contemporânea</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Compagnon:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Fixo -->
     <header class="header">
-        <nav class="nav container">
-            <div class="nav__brand">
-                <h1 class="nav__logo">RECANTO</h1>
-                <p class="nav__subtitle">ARQUITETURA CONTEMPORÂNEA</p>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-header">
+                    <div class="placeholder-img" data-width="60" data-height="45">logo_recanto_header.png</div>
+                </div>
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link active">HOME</a>
+                    <a href="#sobre" class="nav-link">SOBRE</a>
+                    <a href="#metodo" class="nav-link">MÉTODO</a>
+                    <a href="#projetos" class="nav-link">PROJETOS</a>
+                    <a href="#contato" class="nav-link">CONTATO</a>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <ul class="nav__menu" id="navMenu">
-                <li><a href="#home" class="nav__link">Home</a></li>
-                <li><a href="#sobre" class="nav__link">Sobre</a></li>
-                <li><a href="#servicos" class="nav__link">Serviços</a></li>
-                <li><a href="#projetos" class="nav__link">Projetos</a></li>
-                <li><a href="#metodologia" class="nav__link">Metodologia</a></li>
-                <li><a href="#contato" class="nav__link">Contato</a></li>
-            </ul>
-            <button class="nav__toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        </div>
+        <nav class="nav-mobile">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#sobre" class="nav-link">SOBRE</a>
+            <a href="#metodo" class="nav-link">MÉTODO</a>
+            <a href="#projetos" class="nav-link">PROJETOS</a>
+            <a href="#contato" class="nav-link">CONTATO</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero__background"></div>
-        <div class="hero__content container">
-            <h2 class="hero__title">Arquitetura que Cria Histórias</h2>
-            <p class="hero__subtitle">Acreditamos que a arquitetura tem o poder de preservar histórias e criar novas memórias. Transformamos seus sonhos em realidade através de projetos únicos e contemporâneos.</p>
-            <a href="#projetos" class="btn btn--primary btn--lg hero__cta">Conhecer Projetos</a>
-        </div>
-    </section>
-
-    <!-- Sobre Section -->
-    <section id="sobre" class="sobre py-16">
+    <!-- Seção HOME -->
+    <section id="home" class="section section-home">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Sobre Nós</h2>
-                <p class="section__subtitle">Conheça os arquitetos por trás dos projetos</p>
-            </div>
-            <div class="sobre__content">
-                <div class="sobre__text">
-                    <h3>Raul Hirsch & Gabriel Thomé</h3>
-                    <p class="sobre__formation">Formados pela UFMG</p>
-                    <p>Nosso escritório nasceu da paixão por criar espaços que emocionam e transformam vidas. Cada projeto é uma oportunidade única de materializar sonhos e criar ambientes que reflitam a personalidade e necessidades dos nossos clientes.</p>
-                    <p>Com formação sólida pela Universidade Federal de Minas Gerais, combinamos conhecimento técnico com sensibilidade artística para entregar projetos excepcionais de arquitetura contemporânea.</p>
+            <div class="home-content">
+                <div class="home-logo">
+                    <div class="placeholder-img" data-width="1200" data-height="400">recanto_home_logo.png</div>
                 </div>
-                <div class="sobre__image">
-                    <div class="placeholder-image">
-                        <span>Foto dos Arquitetos</span>
-                    </div>
-                </div>
+                <h1 class="home-title">RECANTO</h1>
+                <h2 class="home-subtitle">ARQUITETURA CONTEMPORÂNEA</h2>
+                <p class="home-text">
+                    Acreditamos que a boa arquitetura está acima de estilos ou modismos. Nosso compromisso é criar espaços funcionais, atemporais e que reflitam a personalidade de cada cliente, sempre com atenção aos detalhes e qualidade construtiva.
+                </p>
+                <a href="#projetos" class="btn btn-primary">CONHECER PROJETOS</a>
             </div>
         </div>
     </section>
 
-    <!-- Serviços Section -->
-    <section id="servicos" class="servicos py-16">
+    <!-- Seção SOBRE -->
+    <section id="sobre" class="section section-sobre">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Nossos Serviços</h2>
-                <p class="section__subtitle">Soluções completas para seus projetos arquitetônicos</p>
-            </div>
-            
-            <!-- Serviços Individuais -->
-            <div class="servicos__grid">
-                <div class="card servico-card">
-                    <div class="card__body">
-                        <h3>Estudo Preliminar</h3>
-                        <p class="servico__desc">Esboços e Modelagens 3D</p>
-                        <p class="servico__detail">Ponto de partida para transformar ideias em realidade. Exploramos o potencial do terreno e criamos proposta inicial.</p>
-                        <div class="servico__price">R$ 900</div>
+            <h2 class="section-title">SOBRE</h2>
+            <div class="sobre-content">
+                <div class="socios-fotos">
+                    <div class="socio-foto">
+                        <div class="placeholder-img" data-width="300" data-height="400">foto_socio1.png</div>
+                    </div>
+                    <div class="socio-foto">
+                        <div class="placeholder-img" data-width="300" data-height="400">foto_socio2.png</div>
                     </div>
                 </div>
-                
-                <div class="card servico-card">
-                    <div class="card__body">
-                        <h3>Anteprojeto</h3>
-                        <p class="servico__desc">Definição e Imagens Realistas</p>
-                        <p class="servico__detail">Visão começa a ganhar contornos mais claros. Plantas detalhadas e renderizações tridimensionais.</p>
-                        <div class="servico__price">R$ 1.200</div>
-                    </div>
-                </div>
-                
-                <div class="card servico-card">
-                    <div class="card__body">
-                        <h3>Projeto Executivo</h3>
-                        <p class="servico__desc">Desenhos Técnicos e Imagens para Execução</p>
-                        <p class="servico__detail">Plano técnico completo, pronto para ser materializado. Desenhos técnicos detalhados.</p>
-                        <div class="servico__price">R$ 1.250</div>
-                    </div>
-                </div>
-                
-                <div class="card servico-card">
-                    <div class="card__body">
-                        <h3>Detalhamento</h3>
-                        <p class="servico__desc">Especificações para Construção e Aprovação</p>
-                        <p class="servico__detail">Projeto ganha vida nos mínimos detalhes. Foco em áreas sensíveis como cozinhas e banheiros.</p>
-                        <div class="servico__price">R$ 1.320</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pacotes -->
-            <div class="pacotes">
-                <h3 class="pacotes__title">Pacotes Especiais</h3>
-                <div class="pacotes__grid">
-                    <div class="card pacote-card pacote-card--destaque">
-                        <div class="card__body">
-                            <div class="pacote__badge">Mais Popular</div>
-                            <h4>Projeto Completo</h4>
-                            <div class="pacote__prices">
-                                <span class="pacote__price-old">R$ 4.670</span>
-                                <span class="pacote__price-new">R$ 2.690</span>
-                                <span class="pacote__discount">45% OFF</span>
-                            </div>
-                            <ul class="pacote__includes">
-                                <li>✓ Estudo Preliminar</li>
-                                <li>✓ Anteprojeto</li>
-                                <li>✓ Projeto Executivo</li>
-                                <li>✓ Detalhamento</li>
-                            </ul>
-                            <button class="btn btn--primary btn--full-width">Escolher Pacote</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card pacote-card">
-                        <div class="card__body">
-                            <h4>Projeto Rápido</h4>
-                            <div class="pacote__prices">
-                                <span class="pacote__price-old">R$ 2.100</span>
-                                <span class="pacote__price-new">R$ 980</span>
-                                <span class="pacote__discount">53% OFF</span>
-                            </div>
-                            <ul class="pacote__includes">
-                                <li>✓ Estudo Preliminar</li>
-                                <li>✓ Anteprojeto</li>
-                            </ul>
-                            <button class="btn btn--outline btn--full-width">Escolher Pacote</button>
-                        </div>
-                    </div>
+                <div class="sobre-texto">
+                    <p>O escritório Recanto nasceu da paixão pela arquitetura contemporânea e do desejo de criar espaços únicos que traduzem os sonhos e necessidades de nossos clientes em realidade construída.</p>
+                    <p>Com mais de uma década de experiência, nossa equipe combina criatividade, técnica e inovação para desenvolver projetos que respeitam o ambiente, valorizam a funcionalidade e expressam a personalidade de cada cliente.</p>
+                    <p>Nosso compromisso vai além do projeto: acompanhamos cada etapa da execução, garantindo que a visão inicial se materialize com a qualidade e os detalhes que fazem a diferença.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projetos Section -->
-    <section id="projetos" class="projetos py-16">
+    <!-- Seção MÉTODO -->
+    <section id="metodo" class="section section-metodo">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Nossos Projetos</h2>
-                <p class="section__subtitle">Conheça algumas de nossas realizações</p>
-            </div>
-            <div class="projetos__grid" id="projetosGrid">
-                <!-- Projetos serão carregados via JavaScript -->
+            <h2 class="section-title">MÉTODO</h2>
+            <div class="metodo-etapas">
+                <div class="etapa">
+                    <div class="etapa-circulo">
+                        <div class="placeholder-img circle" data-width="400" data-height="400">metodo_estudo.png</div>
+                    </div>
+                    <h3 class="etapa-nome">Estudo Preliminar</h3>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">
+                        <div class="placeholder-img circle" data-width="400" data-height="400">metodo_anteprojeto.png</div>
+                    </div>
+                    <h3 class="etapa-nome">Anteprojeto</h3>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">
+                        <div class="placeholder-img circle" data-width="400" data-height="400">metodo_executivo.png</div>
+                    </div>
+                    <h3 class="etapa-nome">Projeto Executivo</h3>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">
+                        <div class="placeholder-img circle" data-width="400" data-height="400">metodo_detalhamento.png</div>
+                    </div>
+                    <h3 class="etapa-nome">Detalhamento</h3>
+                </div>
+                <div class="etapa">
+                    <div class="etapa-circulo">
+                        <div class="placeholder-img circle" data-width="400" data-height="400">metodo_execucao.png</div>
+                    </div>
+                    <h3 class="etapa-nome">Execução</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Metodologia Section -->
-    <section id="metodologia" class="metodologia py-16">
+    <!-- Seção PROJETOS -->
+    <section id="projetos" class="section section-projetos">
         <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Nossa Metodologia</h2>
-                <p class="section__subtitle">Processo estruturado em 6 etapas</p>
-            </div>
-            <div class="metodologia__timeline" id="metodologiaTimeline">
-                <!-- Timeline será carregada via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato Section -->
-    <section id="contato" class="contato py-16">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Entre em Contato</h2>
-                <p class="section__subtitle">Vamos transformar seu sonho em realidade</p>
-            </div>
-            <div class="contato__content">
-                <div class="contato__info">
-                    <div class="contato__item">
-                        <h4>Instagram</h4>
-                        <a href="https://instagram.com/recanto_arq" target="_blank">@RECANTO_ARQ</a>
-                    </div>
-                    <div class="contato__item">
-                        <h4>WhatsApp</h4>
-                        <a href="https://wa.me/5512996462826" target="_blank">12 99646-2826</a>
-                    </div>
-                    <div class="contato__item">
-                        <h4>Email</h4>
-                        <a href="mailto:recantomineiroarquitetura@gmail.com">RECANTOMINEIROARQUITETURA@GMAIL.COM</a>
-                    </div>
-                    <div class="contato__qr">
-                        <div class="qr-placeholder">QR Code</div>
+            <h2 class="section-title">PROJETOS</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card" data-projeto="0">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto1.png</div>
+                    <div class="projeto-info">
+                        <h3>Residência Contemporânea</h3>
+                        <button class="btn btn-outline">Detalhes</button>
                     </div>
                 </div>
-                <form class="contato__form" id="contactForm">
+                <div class="projeto-card" data-projeto="1">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto2.png</div>
+                    <div class="projeto-info">
+                        <h3>Loft Urbano</h3>
+                        <button class="btn btn-outline">Detalhes</button>
+                    </div>
+                </div>
+                <div class="projeto-card" data-projeto="2">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto3.png</div>
+                    <div class="projeto-info">
+                        <h3>Casa de Campo</h3>
+                        <button class="btn btn-outline">Detalhes</button>
+                    </div>
+                </div>
+                <div class="projeto-card" data-projeto="3">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto4.png</div>
+                    <div class="projeto-info">
+                        <h3>Escritório Comercial</h3>
+                        <button class="btn btn-outline">Detalhes</button>
+                    </div>
+                </div>
+                <div class="projeto-card" data-projeto="4">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto5.png</div>
+                    <div class="projeto-info">
+                        <h3>Reforma Apartamento</h3>
+                        <button class="btn btn-outline">Detalhes</button>
+                    </div>
+                </div>
+                <div class="projeto-card" data-projeto="5">
+                    <div class="placeholder-img" data-width="600" data-height="400">projeto6.png</div>
+                    <div class="projeto-info">
+                        <h3>Casa Minimalista</h3>
+                        <button class="btn btn-outline">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CONTATO -->
+    <section id="contato" class="section section-contato">
+        <div class="container">
+            <h2 class="section-title">CONTATO</h2>
+            <div class="contato-content">
+                <form class="contato-form">
                     <div class="form-group">
-                        <label class="form-label" for="nome">Nome</label>
-                        <input type="text" class="form-control" id="nome" required>
+                        <label for="nome" class="form-label">Nome *</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="telefone">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone">
+                        <label for="telefone" class="form-label">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="projeto">Tipo de Projeto</label>
-                        <select class="form-control" id="projeto">
-                            <option value="">Selecione...</option>
-                            <option value="residencial">Residencial</option>
-                            <option value="comercial">Comercial</option>
-                            <option value="reforma">Reforma</option>
-                            <option value="paisagismo">Paisagismo</option>
-                        </select>
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="5"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="mensagem">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Conte-nos sobre seu projeto..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--full-width">Enviar Mensagem</button>
+                    <button type="submit" class="btn btn-primary btn-full-width">Enviar Mensagem</button>
                 </form>
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <h3>WHATSAPP</h3>
+                        <p>12996462826</p>
+                    </div>
+                    <div class="contato-item">
+                        <h3>EMAIL</h3>
+                        <p>recantomineiroarquitetura@gmail.com</p>
+                    </div>
+                    <div class="contato-item">
+                        <h3>ENDEREÇO</h3>
+                        <p>Av. João Pinheiro, 607</p>
+                    </div>
+                    <div class="contato-item">
+                        <h3>INSTAGRAM</h3>
+                        <p>@recanto_arq</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <h3>RECANTO</h3>
-                    <p>ARQUITETURA CONTEMPORÂNEA</p>
-                    <p>Transformando sonhos em realidade através da arquitetura.</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Recanto Arquitetura Ltda.</p>
+                    <p>Entre em contato para transformar seu sonho em realidade</p>
                 </div>
-                <div class="footer__links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
+                <div class="footer-logo">
+                    <div class="placeholder-img" data-width="40" data-height="30">logo_recanto_footer.png</div>
                 </div>
-                <div class="footer__social">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-links">
-                        <a href="https://instagram.com/recanto_arq" target="_blank">Instagram</a>
-                        <a href="https://wa.me/5512996462826" target="_blank">WhatsApp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2025 RECANTO - Arquitetura Contemporânea. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal para projetos -->
-    <div class="modal" id="projetoModal">
-        <div class="modal__content">
-            <span class="modal__close">&times;</span>
-            <div class="modal__body" id="modalBody">
-                <!-- Conteúdo do projeto será carregado aqui -->
+    <!-- Modal de Projeto -->
+    <div id="projeto-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <div class="modal-fotos">
+                <div class="placeholder-img" data-width="800" data-height="600" id="modal-foto1"></div>
+                <div class="placeholder-img" data-width="800" data-height="600" id="modal-foto2"></div>
+                <div class="placeholder-img" data-width="800" data-height="600" id="modal-foto3"></div>
+                <div class="placeholder-img" data-width="800" data-height="600" id="modal-foto4"></div>
+            </div>
+            <div class="modal-avaliacao">
+                <div class="estrelas">
+                    <span>★★★★★</span>
+                </div>
+                <p><strong id="modal-cliente"></strong></p>
+                <p id="modal-depoimento"></p>
             </div>
         </div>
     </div>

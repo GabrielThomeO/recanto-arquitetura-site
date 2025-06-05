@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recanto - Arquitetura Contemporânea</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Compagnon:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Fixo -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo_recanto_header.png" alt="Recanto Arquitetura" class="logo-img">
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">HOME</a></li>
+                    <li><a href="#sobre" class="nav-link">SOBRE</a></li>
+                    <li><a href="#metodo" class="nav-link">MÉTODO</a></li>
+                    <li><a href="#projetos" class="nav-link">PROJETOS</a></li>
+                    <li><a href="#contato" class="nav-link">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção HOME -->
+    <section id="home" class="section section-bege">
+        <div class="container">
+            <div class="home-content">
+                <div class="logo-principal">
+                    <img src="images/recanto_home_logo.png" alt="Recanto Arquitetura" class="logo-home">
+                </div>
+                <h1 class="titulo-outline">RECANTO</h1>
+                <p class="home-texto">
+                    A arquitetura contemporânea é uma expressão artística que transcende o tempo, criando espaços que harmonizam funcionalidade e beleza. 
+                    No Recanto, acreditamos que cada projeto é único e merece uma abordagem personalizada que reflita a personalidade e as necessidades de seus habitantes. 
+                    Nossa expertise em design contemporâneo nos permite criar ambientes que inspiram, conectam e transformam a experiência de morar e trabalhar. 
+                    Cada detalhe é cuidadosamente pensado para proporcionar conforto, sustentabilidade e uma estética atemporal que valoriza o investimento de nossos clientes.
+                </p>
+                <button class="btn btn-principal" onclick="scrollToSection('projetos')">
+                    CONHECER PROJETOS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção SOBRE -->
+    <section id="sobre" class="section section-marrom">
+        <div class="container">
+            <h2 class="section-title">SOBRE</h2>
+            <div class="sobre-content">
+                <div class="socios">
+                    <div class="socio">
+                        <img src="images/foto_socio1.png" alt="Sócio 1" class="socio-foto">
+                    </div>
+                    <div class="socio">
+                        <img src="images/foto_socio2.png" alt="Sócio 2" class="socio-foto">
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <p>
+                        O escritório Recanto - Arquitetura Contemporânea nasceu da paixão por criar espaços únicos que refletem a personalidade e as necessidades de cada cliente. 
+                        Com mais de uma década de experiência no mercado, nossa equipe é formada por profissionais especializados em arquitetura contemporânea, design de interiores e planejamento urbano.
+                    </p>
+                    <p>
+                        Nosso diferencial está na abordagem humanizada e na busca constante por soluções inovadoras que integrem sustentabilidade, funcionalidade e estética. 
+                        Cada projeto é desenvolvido com atenção aos mínimos detalhes, sempre respeitando o orçamento e os prazos estabelecidos com nossos clientes.
+                    </p>
+                    <p>
+                        Acreditamos que a arquitetura tem o poder de transformar vidas e criar memórias afetivas. Por isso, trabalhamos em estreita colaboração com nossos clientes, 
+                        ouvindo suas necessidades e sonhos para criar espaços que verdadeiramente reflitam sua essência e proporcionem bem-estar e felicidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção MÉTODO -->
+    <section id="metodo" class="section section-bege">
+        <div class="container">
+            <h2 class="section-title">MÉTODO</h2>
+            <div class="metodo-grid">
+                <div class="metodo-item">
+                    <div class="metodo-circulo">
+                        <img src="images/metodo_estudo.png" alt="Estudo Preliminar">
+                    </div>
+                    <h3 class="metodo-nome">Estudo Preliminar</h3>
+                </div>
+                <div class="metodo-item">
+                    <div class="metodo-circulo">
+                        <img src="images/metodo_anteprojeto.png" alt="Anteprojeto">
+                    </div>
+                    <h3 class="metodo-nome">Anteprojeto</h3>
+                </div>
+                <div class="metodo-item">
+                    <div class="metodo-circulo">
+                        <img src="images/metodo_executivo.png" alt="Projeto Executivo">
+                    </div>
+                    <h3 class="metodo-nome">Projeto Executivo</h3>
+                </div>
+                <div class="metodo-item">
+                    <div class="metodo-circulo">
+                        <img src="images/metodo_detalhamento.png" alt="Detalhamento">
+                    </div>
+                    <h3 class="metodo-nome">Detalhamento</h3>
+                </div>
+                <div class="metodo-item">
+                    <div class="metodo-circulo">
+                        <img src="images/metodo_execucao.png" alt="Execução">
+                    </div>
+                    <h3 class="metodo-nome">Execução</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção PROJETOS -->
+    <section id="projetos" class="section section-marrom">
+        <div class="container">
+            <h2 class="section-title">PROJETOS</h2>
+            <div class="projetos-grid">
+                <div class="projeto-item" onclick="openModal(0)">
+                    <img src="images/projeto1.png" alt="Residência Contemporânea" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Residência Contemporânea</h3>
+                    </div>
+                </div>
+                <div class="projeto-item" onclick="openModal(1)">
+                    <img src="images/projeto2.png" alt="Loft Urbano" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Loft Urbano</h3>
+                    </div>
+                </div>
+                <div class="projeto-item" onclick="openModal(2)">
+                    <img src="images/projeto3.png" alt="Casa de Campo" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Casa de Campo</h3>
+                    </div>
+                </div>
+                <div class="projeto-item" onclick="openModal(3)">
+                    <img src="images/projeto4.png" alt="Escritório Comercial" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Escritório Comercial</h3>
+                    </div>
+                </div>
+                <div class="projeto-item" onclick="openModal(4)">
+                    <img src="images/projeto5.png" alt="Reforma Apartamento" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Reforma Apartamento</h3>
+                    </div>
+                </div>
+                <div class="projeto-item" onclick="openModal(5)">
+                    <img src="images/projeto6.png" alt="Casa Minimalista" class="projeto-img">
+                    <div class="projeto-overlay">
+                        <h3>Casa Minimalista</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CONTATO -->
+    <section id="contato" class="section section-bege">
+        <div class="container">
+            <h2 class="section-title">CONTATO</h2>
+            <div class="contato-content">
+                <div class="contato-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-principal btn-full-width">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <h4>WhatsApp</h4>
+                        <p>(12) 99646-2826</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>recantomineiroarquitetura@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Endereço</h4>
+                        <p>Av. João Pinheiro, 607</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Instagram</h4>
+                        <p>@recanto_arq</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo_recanto_footer.png" alt="Recanto Arquitetura">
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Recanto - Arquitetura Contemporânea. Todos os direitos reservados.</p>
+                    <p>Transforme seus sonhos em realidade. Entre em contato conosco!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal dos Projetos -->
+    <div id="projeto-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h3 id="modal-title"></h3>
+                <div class="modal-gallery">
+                    <img id="modal-img1" alt="">
+                    <img id="modal-img2" alt="">
+                    <img id="modal-img3" alt="">
+                    <img id="modal-img4" alt="">
+                </div>
+                <div class="modal-rating">
+                    <div class="stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p id="modal-cliente"></p>
+                </div>
+                <div class="modal-depoimento">
+                    <p id="modal-depoimento-texto"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

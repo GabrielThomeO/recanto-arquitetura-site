@@ -1,0 +1,13 @@
+{
+  "name": "recanto-arquitetura",
+  "version": "1.0.0",
+  "description": "Site institucional Recanto - Arquitetura Contemporânea",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Build completed'"
+  },
+  "keywords": ["arquitetura", "design", "contemporaneo"],
+  "author": "Recanto Arquitetura",
+  "license": "MIT"
+}
